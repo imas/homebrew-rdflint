@@ -1,14 +1,14 @@
-homebrew-takemikami
+homebrew-rdflint
 --
 
-Homebrew Formula for myself
+Homebrew Formula for rdflint
 
 see. https://brew.sh/
 
 ## How to use
 
 ```
-brew tap takemikami/takemikami
+brew tap imas/rdflint
 brew install [package-name]
 ```
 
