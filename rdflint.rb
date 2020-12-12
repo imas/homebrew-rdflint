@@ -6,7 +6,7 @@ class Rdflint < Formula
   sha256 "efb2daa756e706ef4248dc10c115001ad77d1d71e8b55a3a30df743d4ca95aaa"
 
   depends_on :macos
-  depends_on :java
+  depends_on "openjdk"
 
   def install
     system "echo '#!/bin/sh' > rdflint"
