@@ -9,15 +9,11 @@ class Rdflint < Formula
   depends_on "openjdk"
 
   def install
-    system "echo '#!/bin/sh' > rdflint"
-    system "echo 'JAVA_HOME=$(/usr/libexec/java_home)' >> rdflint"
-    system "echo '$JAVA_HOME/bin/java' -jar #{libexec}/rdflint-#{RDFLINT_VERSION}.jar '$@' >> rdflint"
-    system "chmod 555 rdflint"
     libexec.install "rdflint-#{RDFLINT_VERSION}.jar"
-    bin.install 'rdflint'
+    bin.write_jar_script libexec/"rdflint-#{RDFLINT_VERSION}.jar", "rdflint"
   end
 
   test do
-    system "#{bin}/rdflint"
+    system bin/"rdflint"
   end
 end
