@@ -1,0 +1,21 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: install rdflint
+        run: |
+          brew tap imas/rdflint file://$(pwd)
+          brew install rdflint
+
+      - run: rdflint -v
