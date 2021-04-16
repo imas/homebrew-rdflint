@@ -13,6 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - run: brew style *.rb
+
       - name: install rdflint
         run: |
           brew tap imas/rdflint file://$(pwd)
