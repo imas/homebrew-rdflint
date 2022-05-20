@@ -1,14 +1,14 @@
 # typed: false
 # frozen_string_literal: true
 
-RDFLINT_VERSION="0.1.5"
+RDFLINT_VERSION="0.2.0"
 
 # Rdflint Formula
 class Rdflint < Formula
   desc ": RDF linter"
   homepage "https://github.com/imas/rdflint"
   url "https://jitpack.io/com/github/imas/rdflint/#{RDFLINT_VERSION}/rdflint-#{RDFLINT_VERSION}.jar"
-  sha256 "d96520dcc355a47cb71449d89ebebf460a1eb9d3bb3a379efbb65724972386c7"
+  sha256 "7c4381ef4517939c9426d94bcdb2fd5a0fc6e659777eea90b15dfba1dfcc3dfd"
 
   depends_on :macos
   depends_on "openjdk"
