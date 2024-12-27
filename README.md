@@ -1,6 +1,11 @@
 homebrew-rdflint
 --
 
+__Deprecated__
+Please use install script, ref [Document-Getting started](https://imas.github.io/rdflint/getting_started/#installation)
+
+----
+
 Homebrew Formula for rdflint
 
 see. https://brew.sh/
